@@ -84,7 +84,7 @@ git push origin main
 ```
 
 **DNS-setup (Cloud86):**
-- `www` → CNAME → `rg6ojttf.up.railway.app` ✅
+- `www` → CNAME → `qhqzr824.up.railway.app` ✅
 - `@` → MX + TXT records voor e-mail (niet wijzigen)
 - Root-domein redirect (`smoothbyjune.be` → `www.smoothbyjune.be`) wordt afgehandeld door Node.js in `server.js`
 
