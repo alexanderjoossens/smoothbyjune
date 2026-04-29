@@ -5,6 +5,15 @@ const nodemailer = require('nodemailer');
 const path       = require('path');
 
 const app = express();
+
+/* ─── www redirect — must be first middleware ─── */
+app.use((req, res, next) => {
+  if (req.headers.host === 'smoothbyjune.be') {
+    return res.redirect(301, 'https://www.smoothbyjune.be' + req.url);
+  }
+  next();
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname)));
