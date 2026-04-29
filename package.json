@@ -1,0 +1,17 @@
+{
+  "name": "smoothbyjune",
+  "version": "1.0.0",
+  "description": "Smooth by June website with contact/booking backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

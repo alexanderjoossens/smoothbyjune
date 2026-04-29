@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maak online een afspraak bij Smooth by June voor laserontharing in Geel. Kies je zone, geef je voorkeur op en ontvang een bevestiging.">
+  <title>Afspraak Maken | Smooth by June Geel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <style>
+    /* Minimal nav for booking page */
+    @media (min-width: 901px) {
+      .booking-page .nav__menu .nav__link { display: none; }
+      .booking-page .nav__menu .btn--nav-cta { display: none; }
+    }
+  </style>
+</head>
+<body class="booking-page">
+
+  <a href="#main" class="skip-link">Ga naar hoofdinhoud</a>
+
+  <nav class="nav" id="nav" aria-label="Navigatie">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Smooth by June — terug naar home">
+          <img src="assets/img/logo.svg" alt="Smooth by June logo" class="nav__logo-icon" width="52" height="36">
+          <div class="nav__logo-text-wrap">
+            <span class="nav__logo-title">Smooth by June</span>
+            <span class="nav__logo-subtitle">Laserontharing · Geel</span>
+          </div>
+        </a>
+        <ul class="nav__menu" id="navMenu" role="list">
+          <li><a href="over-mij.html"             class="nav__link">Over mij</a></li>
+          <li><a href="laserontharing.html"        class="nav__link">Laserontharing</a></li>
+          <li><a href="behandelingen-prijzen.html" class="nav__link">Behandelingen & Prijzen</a></li>
+          <li><a href="contact.html"               class="nav__link">Contact</a></li>
+        </ul>
+        <a href="index.html" style="font-size:0.875rem;color:var(--clr-text-muted);margin-left:auto;display:flex;align-items:center;gap:0.5rem;white-space:nowrap;flex-shrink:0;" class="hidden-mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          Terug
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero page-hero--warm" aria-label="Afspraak maken" style="padding-top:calc(var(--nav-height) + var(--sp-16));padding-bottom:var(--sp-12);">
+      <div class="container">
+        <div class="page-hero__inner">
+          <span class="overline">Smooth by June · Geel</span>
+          <h1>Maak een afspraak</h1>
+          <p>Vul het formulier in en ik neem zo snel mogelijk contact met je op om je afspraak te bevestigen. Het intakegesprek is altijd gratis en vrijblijvend.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM SECTION -->
+    <section class="section bg-white" aria-label="Afspraakformulier">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 300px 1fr; gap:var(--sp-16); align-items:start;">
+
+          <!-- SIDEBAR: contact info -->
+          <aside class="reveal reveal--left" aria-label="Contactinformatie" style="position:sticky;top:calc(var(--nav-height) + var(--sp-8));">
+            <h3 style="font-size:1.5rem;margin-bottom:var(--sp-6);">Liever persoonlijk contact?</h3>
+            <p style="font-size:var(--fz-sm);color:var(--clr-text-muted);margin-bottom:var(--sp-8);">Je kan me ook bereiken via WhatsApp of mail — ik help je graag verder.</p>
+
+            <div class="contact-info-block">
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-info-item__label">WhatsApp</span>
+                  <span class="contact-info-item__val"><a href="https://wa.me/32471608209" target="_blank" rel="noopener">+32 471 60 82 09</a></span>
+                  <span class="contact-info-item__sub">Snelste weg</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-info-item__label">E-mail</span>
+                  <span class="contact-info-item__val"><a href="mailto:info@smoothbyjune.be">info@smoothbyjune.be</a></span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-info-item__label">Locatie</span>
+                  <span class="contact-info-item__val">Oosterloseweg 42<br>2440 Geel</span>
+                  <span class="contact-info-item__sub">Parking aan de zijkant</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box mt-8" style="font-size:0.85rem;">
+              <strong>Je ontvangt altijd een bevestiging</strong> zodra je afspraak is ingepland — via e-mail of WhatsApp.
+            </div>
+          </aside>
+
+          <!-- FORM -->
+          <div class="reveal reveal--right">
+            <form class="booking-form" id="bookingForm" novalidate aria-label="Afspraakformulier">
+
+              <!-- Section 1: Persoonlijke gegevens -->
+              <div class="form-section">
+                <p class="form-section__title">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  Jouw gegevens
+                </p>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Naam <span style="color:var(--clr-cta)" aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Jouw naam" required autocomplete="name" aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mailadres <span style="color:var(--clr-cta)" aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="jouw@email.be" required autocomplete="email" aria-required="true">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Telefoonnummer <span style="color:var(--clr-text-muted);font-weight:400;font-size:0.8rem;">(optioneel)</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="+32 4xx xx xx xx" autocomplete="tel">
+                </div>
+              </div>
+
+              <!-- Section 2: Zone(s) -->
+              <div class="form-section">
+                <p class="form-section__title">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Zone(s) <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.8rem;color:var(--clr-text-muted);">(optioneel — selecteer alles wat je wil)</span>
+                </p>
+
+                <p class="form-section__sub">Gelaat</p>
+                <div class="zone-cards" role="group" aria-label="Gelaat zones">
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Bovenlip (€25)">
+                    <span class="zone-card-inner"><span class="zone-name">Bovenlip</span><span class="zone-price">€25</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Kin (€25)">
+                    <span class="zone-card-inner"><span class="zone-name">Kin</span><span class="zone-price">€25</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Tussen wenkbrauwen (€25)">
+                    <span class="zone-card-inner"><span class="zone-name">Tussen wenkbrauwen</span><span class="zone-price">€25</span></span>
+                  </label>
+                </div>
+
+                <p class="form-section__sub">Bovenlichaam</p>
+                <div class="zone-cards" role="group" aria-label="Bovenlichaam zones">
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Oksels (€45)">
+                    <span class="zone-card-inner"><span class="zone-name">Oksels</span><span class="zone-price">€45</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Onderarmen (€49)">
+                    <span class="zone-card-inner"><span class="zone-name">Onderarmen</span><span class="zone-price">€49</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Volledig armen (€99)">
+                    <span class="zone-card-inner"><span class="zone-name">Volledig armen</span><span class="zone-price">€99</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Handen (€35)">
+                    <span class="zone-card-inner"><span class="zone-name">Handen</span><span class="zone-price">€35</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Navellijn (€25)">
+                    <span class="zone-card-inner"><span class="zone-name">Navellijn</span><span class="zone-price">€25</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Borst (€89)">
+                    <span class="zone-card-inner"><span class="zone-name">Borst</span><span class="zone-price">€89</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Rug boven (€85)">
+                    <span class="zone-card-inner"><span class="zone-name">Rug boven</span><span class="zone-price">€85</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Rug onder (€85)">
+                    <span class="zone-card-inner"><span class="zone-name">Rug onder</span><span class="zone-price">€85</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Rug volledig (€129)">
+                    <span class="zone-card-inner"><span class="zone-name">Rug volledig</span><span class="zone-price">€129</span></span>
+                  </label>
+                </div>
+
+                <p class="form-section__sub">Bikini & Schaamstreek</p>
+                <div class="zone-cards" role="group" aria-label="Bikini zones">
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Bikini sliprand (€45)">
+                    <span class="zone-card-inner"><span class="zone-name">Bikini sliprand</span><span class="zone-price">€45</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Bikini uitgebreid (€55)">
+                    <span class="zone-card-inner"><span class="zone-name">Bikini uitgebreid</span><span class="zone-price">€55</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Bikini volledig (€75)">
+                    <span class="zone-card-inner"><span class="zone-name">Bikini volledig</span><span class="zone-price">€75</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Bilnaad (€35)">
+                    <span class="zone-card-inner"><span class="zone-name">Bilnaad</span><span class="zone-price">€35</span></span>
+                  </label>
+                </div>
+
+                <p class="form-section__sub">Onderlichaam</p>
+                <div class="zone-cards" role="group" aria-label="Onderlichaam zones">
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Onderbenen (€85)">
+                    <span class="zone-card-inner"><span class="zone-name">Onderbenen</span><span class="zone-price">€85</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Onderbenen + knie (€95)">
+                    <span class="zone-card-inner"><span class="zone-name">Onderbenen + knie</span><span class="zone-price">€95</span></span>
+                  </label>
+                  <label class="zone-card-label">
+                    <input type="checkbox" name="zones" value="Volledig benen (€125)">
+                    <span class="zone-card-inner"><span class="zone-name">Volledig benen</span><span class="zone-price">€125</span></span>
+                  </label>
+                </div>
+
+                <p style="font-size:var(--fz-xs);color:var(--clr-text-muted);margin-top:var(--sp-4);">
+                  Zone niet in de lijst? Vermeld het in het berichtenveld hieronder.
+                </p>
+              </div>
+
+              <!-- Section 3: Voorkeur -->
+              <div class="form-section">
+                <p class="form-section__title">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Voorkeur <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.8rem;color:var(--clr-text-muted);">(optioneel)</span>
+                </p>
+
+                <div class="time-select-grid">
+                  <div class="form-group" style="margin-bottom:0;">
+                    <label for="date">Voorkeursdatum</label>
+                    <input type="date" id="date" name="date" min="">
+                  </div>
+                  <div class="form-group" style="margin-bottom:0;">
+                    <label for="time">Voorkeurstijdstip</label>
+                    <select id="time" name="time">
+                      <option value="">Geen voorkeur</option>
+                      <option value="Ochtend (voor 12u)">Ochtend (voor 12u)</option>
+                      <option value="Middag (12u–14u)">Middag (12u–14u)</option>
+                      <option value="Namiddag (14u–18u)">Namiddag (14u–18u)</option>
+                      <option value="Avond (na 18u)">Avond (na 18u)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 4: Bericht -->
+              <div class="form-section">
+                <p class="form-section__title">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  Extra bericht <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.8rem;color:var(--clr-text-muted);">(optioneel)</span>
+                </p>
+                <div class="form-group" style="margin-bottom:0;">
+                  <textarea id="message" name="message" placeholder="Stel hier een vraag of geef extra info mee (bv. huidtype, andere gewenste zone, …)" rows="4"></textarea>
+                </div>
+              </div>
+
+              <!-- Privacy consent -->
+              <div style="display:flex;align-items:flex-start;gap:var(--sp-3);margin-bottom:var(--sp-8);">
+                <input type="checkbox" id="privacy" name="privacy" required style="width:auto;margin-top:4px;accent-color:var(--clr-cta);cursor:pointer;" aria-required="true">
+                <label for="privacy" style="font-size:0.8rem;color:var(--clr-text-muted);font-weight:400;cursor:pointer;line-height:1.6;">
+                  Ik ga akkoord met de <a href="privacy.html" target="_blank" style="color:var(--clr-cta);">privacyverklaring</a>. Mijn gegevens worden enkel gebruikt voor het plannen van de afspraak. <span style="color:var(--clr-cta);">*</span>
+                </label>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" id="bookingSubmit" class="btn btn--primary btn--lg" style="width:100%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Verstuur afspraakaanvraag
+              </button>
+
+              <div class="form-status form-status--success" id="bookingSuccess" role="alert">
+                ✓ Bedankt! Je aanvraag is verstuurd. Je ontvangt een bevestiging per e-mail. Ik neem zo snel mogelijk contact op.
+              </div>
+              <div class="form-status form-status--error" id="bookingError" role="alert"></div>
+
+              <p style="font-size:0.78rem;color:var(--clr-text-muted);text-align:center;margin-top:var(--sp-4);">
+                Of stuur een berichtje via
+                <a href="https://wa.me/32471608209?text=Hallo%20June%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20voor%20laserontharing." target="_blank" rel="noopener" style="color:var(--clr-cta);font-weight:600;">WhatsApp</a>
+                of
+                <a href="mailto:info@smoothbyjune.be" style="color:var(--clr-cta);font-weight:600;">e-mail</a>
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Reassurance strip -->
+    <section class="section--sm bg-warm" aria-label="Geruststelling">
+      <div class="container">
+        <div class="grid-3 reveal-stagger">
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Gratis intakegesprek</h4>
+            <p>De eerste afspraak is altijd gratis en vrijblijvend. Geen verplichtingen — alleen advies op maat.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h4>Volledige privacy</h4>
+            <p>Ik werk enkel op afspraak. Je behandeling is volledig privé — niemand anders aanwezig.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h4>Snelle bevestiging</h4>
+            <p>Je ontvangt een bevestigingsmail na je aanvraag. Daarna neem ik persoonlijk contact op.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background:var(--clr-dark);padding:var(--sp-8) 0;" aria-label="Footer">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--sp-4);">
+        <p style="font-size:0.8rem;color:rgba(255,255,255,.4);">&copy; 2025 Smooth by June &middot; BTW 0770 767 245 &middot; Geel</p>
+        <div style="display:flex;gap:var(--sp-6);">
+          <a href="privacy.html" style="font-size:0.8rem;color:rgba(255,255,255,.4);">Privacybeleid</a>
+          <a href="index.html"   style="font-size:0.8rem;color:rgba(255,255,255,.4);">← Terug naar website</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/32471608209" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat met June via WhatsApp">
+    <span class="wa-float__tooltip">Boek via WhatsApp</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  /* ── Booking form AJAX submit ── */
+  (function () {
+    /* Set date min to today */
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+
+    const form      = document.getElementById('bookingForm');
+    const submitBtn = document.getElementById('bookingSubmit');
+    const success   = document.getElementById('bookingSuccess');
+    const error     = document.getElementById('bookingError');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      /* Basic validation */
+      const name  = form.name.value.trim();
+      const email = form.email.value.trim();
+      const priv  = form.privacy.checked;
+
+      if (!name || !email) {
+        showError('Vul minstens je naam en e-mailadres in.');
+        form.name.focus();
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showError('Voer een geldig e-mailadres in.');
+        form.email.focus();
+        return;
+      }
+      if (!priv) {
+        showError('Ga akkoord met de privacyverklaring om verder te gaan.');
+        return;
+      }
+
+      /* Build FormData */
+      const data = new FormData(form);
+
+      /* UI: loading */
+      submitBtn.disabled = true;
+      submitBtn.classList.add('btn--loading');
+      submitBtn.textContent = 'Versturen…';
+      hideMessages();
+
+      try {
+        const res = await fetch('/api/booking', {
+          method: 'POST',
+          body:   data,
+        });
+        const json = await res.json();
+
+        if (res.ok && json.success) {
+          form.reset();
+          success.classList.add('show');
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          submitBtn.textContent = 'Verstuurd ✓';
+          submitBtn.disabled = true;
+        } else {
+          throw new Error(json.error || 'Onbekende fout');
+        }
+      } catch (err) {
+        showError(err.message || 'Er ging iets mis. Probeer het opnieuw of stuur een WhatsApp.');
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('btn--loading');
+        submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Verstuur afspraakaanvraag`;
+      }
+    });
+
+    function showError(msg) {
+      error.textContent = msg;
+      error.classList.add('show');
+      error.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function hideMessages() {
+      success.classList.remove('show');
+      error.classList.remove('show');
+    }
+  })();
+  </script>
+</body>
+</html>
