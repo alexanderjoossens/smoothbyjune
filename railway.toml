@@ -2,3 +2,6 @@
 startCommand = "node server.js"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 5
+
+[deploy.envs]
+PORT = "5050"
