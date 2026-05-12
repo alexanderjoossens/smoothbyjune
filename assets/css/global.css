@@ -7,20 +7,20 @@
 
 /* ─── CSS Custom Properties ─── */
 :root {
-  --clr-bg:           #FAF8F5;
-  --clr-bg-warm:      #F5EDE8;
-  --clr-bg-section:   #EDE2DA;
-  --clr-dark:         #2C2420;
-  --clr-dark-soft:    #3D302C;
-  --clr-accent:       #C9A99A;
-  --clr-accent-dark:  #9E8678;
-  --clr-cta:          #A0615A;
-  --clr-cta-hover:    #8B504A;
-  --clr-text:         #2C2420;
-  --clr-text-muted:   #7A6F6A;
+  --clr-bg:           #F8F9F5;
+  --clr-bg-warm:      #EAEFE5;
+  --clr-bg-section:   #D9E1D2;
+  --clr-dark:         #232C24;
+  --clr-dark-soft:    #354036;
+  --clr-accent:       #9DB298;
+  --clr-accent-dark:  #6E8569;
+  --clr-cta:          #5A7858;
+  --clr-cta-hover:    #44603F;
+  --clr-text:         #23302A;
+  --clr-text-muted:   #6F7B6E;
   --clr-white:        #FFFFFF;
-  --clr-border:       rgba(158, 134, 120, 0.22);
-  --clr-overlay:      rgba(44, 36, 32, 0.48);
+  --clr-border:       rgba(110, 133, 105, 0.22);
+  --clr-overlay:      rgba(35, 44, 36, 0.48);
 
   --ff-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --ff-body:    'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -56,10 +56,10 @@
   --radius-xl:  48px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 2px 10px rgba(44, 36, 32, 0.06);
-  --shadow:    0 4px 24px rgba(44, 36, 32, 0.09);
-  --shadow-lg: 0 10px 48px rgba(44, 36, 32, 0.14);
-  --shadow-xl: 0 20px 80px rgba(44, 36, 32, 0.18);
+  --shadow-sm: 0 2px 10px rgba(35, 44, 36, 0.06);
+  --shadow:    0 4px 24px rgba(35, 44, 36, 0.09);
+  --shadow-lg: 0 10px 48px rgba(35, 44, 36, 0.14);
+  --shadow-xl: 0 20px 80px rgba(35, 44, 36, 0.18);
 
   --transition:      0.28s ease;
   --transition-slow: 0.5s ease;
